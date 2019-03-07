@@ -3,9 +3,10 @@
 <script>
 var url = purl();
 if (url.attr('host') == 'nios34.github.io') {
-    var old_url = url.attr('source');
-    var new_url = old_url.replace('nios34.github.io', "113.133.160.211:8001");
-    window.location.replace(new_url); 
+    var website = "http://113.133.160.211:8001";
+    var pathname = window.location.pathname;
+    website = website + pathname
+    window.location.href= website;
 }else {
     window.location.href="http://113.133.160.211:8001/";
 }
