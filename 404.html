@@ -1,11 +1,12 @@
 <body>
 <script>
-var website = "113.133.160.211:8001";
-var url = document.URL;
-var host = window.location.host;
-    
-document.write(url.replace('https', 'http'))
-document.write(url.replace(host, website))
-window.location.href= url;
+    var website = "113.133.160.211:8001";
+    var url = document.URL;
+    var host = window.location.host;
+
+    document.write(url.replace('https', 'http'))
+    document.write(url.replace(host, website))
+    alert(url)
+    window.location.href= url;
 </script>
 </body>
