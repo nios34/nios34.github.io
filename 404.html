@@ -1,14 +1,9 @@
 <body>
-<script src="https://nios34.github.io/purl.min.js"></script>
 <script>
-var url = purl();
-if (url.attr('host') == 'nios34.github.io') {
-    var website = "http://113.133.160.211:8001";
-    var pathname = window.location.pathname;
-    website = website + pathname
-    window.location.href= website;
-}else {
-    window.location.href="http://113.133.160.211:8001/";
-}
+var website = "http://113.133.160.211:8001";
+var url = document.URL;
+    
+document.write(str.replace(/https://nios34.github.io/, website))
+window.location.href= url;
 </script>
 </body>
