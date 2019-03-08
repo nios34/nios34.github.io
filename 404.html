@@ -1,12 +1,11 @@
 <body>
 <script>
-    var website = "113.133.160.211:8001";
+    var ipadport = "113.133.160.211:8001";
     var url = document.URL;
     var host = window.location.host;
 
     url = url.replace('https', 'http');
-    url = url.replace(host, website);
-    alert(url);
+    url = url.replace(host, ipadport);
     window.location.href= url;
 </script>
 </body>
